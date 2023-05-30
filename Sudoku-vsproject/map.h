@@ -1,0 +1,18 @@
+int *newMap();
+void generate(int *nodes, int *answer, int level);
+bool checkCorrect(int *nodes);
+bool checkComplete(int *nodes);
+void clear(int *nodes, int *answer);
+void generateFullMap(int *nodes, int *answer);
+void generateLevelMap(int *nodes, int level);
+void generateLowLevelMap(int *nodes, int level);
+void generateHighLevelMap(int *nodes, int level);
+void generateShuffledMap(int *nodes, int *answer);
+void generateShuffledRowUnit(int *nodes, int *answer, int a, int b);
+void generateShuffledColUnit(int *nodes, int *answer, int a, int b);
+void generateShuffledRow(int *nodes, int *answer, int a, int b);
+void generateShuffledCol(int *nodes, int *answer, int a, int b);
+bool isInvalidPlacement(int *nodes, int x, int y, int v);
+bool isInvalidPlacement(int *nodes, int p);
+bool checkNoSolution(int *nodes);
+int solve(int *nodes, bool multiSolutionSearch, bool keepOutcome);
